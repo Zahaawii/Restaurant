@@ -8,11 +8,11 @@ public class StartOver {
         ConsoleOperators.displayInfo("Do you want to start over? \nPress Y/N");
         String userInput = scanner.next();
 
-        if(userInput.equalsIgnoreCase("Y")) {
-            WelcomeMenu.userChoice();
-        } else {
+        if(userInput.equalsIgnoreCase("N")) {
             System.out.println("Termnial closes");
             System.exit(0);
+        } else {
+            WelcomeMenu.userChoice();
         }
     }
 }
