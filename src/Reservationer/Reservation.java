@@ -1,13 +1,13 @@
 package Reservationer;
 
-public class Reservations {
+public class Reservation {
 
     private int id;
     private String name;
     private String date;
     private int numberOfGuest;
 
-    public Reservations(int id, String name, String date, int numberOfGuest) {
+    public Reservation(int id, String name, String date, int numberOfGuest) {
         this.id = id;
         this.name = name;
         this.date = date;

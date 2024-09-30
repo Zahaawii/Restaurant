@@ -1,3 +1,5 @@
+package Menues;
+
 import java.util.Scanner;
 
 public class WelcomeMenu {
