@@ -1,6 +1,6 @@
-# RestaurantApp
-
-## Restaurant app made in the console. Made your learning perspective. 
+# Restaurant Application.
+Restaurant app made in the console. 
+Made for learning perspective. 
 
 ## Requirements for the assignment: 
 1: Make a reservation.
