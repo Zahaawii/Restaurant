@@ -1,5 +1,3 @@
-package Menues;
-
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -11,6 +9,10 @@ public class Menuer {
     static ArrayList <String> foodMenuVegan = new ArrayList<>();
     static ArrayList <String> wineMenu = new ArrayList<>();
     static ArrayList <String> makeYourOwnMenu = new ArrayList<>();
+    public static int Appetizers = 1;
+    public static int mainMenu = 2;
+    public static int menuVegan = 3;
+
     static int winePrice = 500;
 
     public static void showMenues() {
@@ -61,13 +63,14 @@ public class Menuer {
     }
 
     public static void showOwnMenu() {
-        System.out.println("You can mix up your own menu");
-        showMenues();
 
         System.out.println("Now you can make your own with five servings. " +
                 "Type the name of the dishes you want to add");
 
         makeYourOwnMenu();
+        for(String ownMenu : makeYourOwnMenu) {
+            System.out.println(ownMenu);
+        }
         menuMedVin();
     }
     private static ArrayList makeYourOwnMenu() {

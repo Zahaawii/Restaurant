@@ -1,4 +1,4 @@
-package Menues;
+import Reservationer.ReservationsUI;
 
 import java.util.Scanner;
 
@@ -33,7 +33,7 @@ public class WelcomeMenu {
 
         if(userInput == 1) {
             ConsoleOperators.clearConsole();
-            ConsoleOperators.displayInfo("Book a reservation");
+            ReservationsUI.bookReservation();
             StartOver.userStartOver();
 
         }
@@ -41,21 +41,21 @@ public class WelcomeMenu {
         if(userInput == 2) {
             ConsoleOperators.clearConsole();
             ConsoleOperators.displayInfo("See our menues");
-            Menuer.showMenues();
+            UserChoiceMenues.userDecision();
             StartOver.userStartOver();
 
         }
 
         if(userInput == 3) {
             ConsoleOperators.clearConsole();
-            ConsoleOperators.displayInfo("See your reservation");
+            ReservationsUI.viewAllReservations();
             StartOver.userStartOver();
 
         }
 
         if(userInput == 4) {
             ConsoleOperators.clearConsole();
-            ConsoleOperators.displayInfo("Cancel for reservation");
+            ReservationsUI.cancelReservation();
             StartOver.userStartOver();
 
         }
